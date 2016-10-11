@@ -61,4 +61,3 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery
 TW_BRIGHTNESS_PATH := /sys/class/backlight/panel/brightness
 TW_NO_CPU_TEMP := true
 TW_MAX_BRIGHTNESS := 255
-TW_HAS_DOWNLOAD_MODE := true
