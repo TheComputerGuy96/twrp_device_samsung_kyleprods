@@ -14,6 +14,8 @@ TARGET_BOOTLOADER_BOARD_NAME := hawaii
 
 # Kernel
 TARGET_KERNEL_CONFIG := bcm21664_hawaii_ss_kyleproxx_rev00_recovery_defconfig
+TARGET_KERNEL_HAVE_EXFAT := true
+TARGET_KERNEL_HAVE_NTFS := true
 TARGET_KERNEL_SOURCE := kernel/samsung/kyleproxx
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x82000000
@@ -27,6 +29,7 @@ else
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
 endif
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+
 # File system
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
